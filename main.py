@@ -1,12 +1,17 @@
 import tkinter as tk
-
+import windows
+import windows.block
 class App():
     def __init__(self):
         self.root = tk.Tk()
         self.root.geometry("1280x720")
         self.root.title("Lock in") # Todo: Change name
-        self.root.iconbitmap("assets\ICO-TO-BE-REPLACED.ico")
+        self.root.iconbitmap("assets\\ICO-TO-BE-REPLACED.ico")
+        print(self.root)
+        self.default_window = windows.block.Block_window(root=self.root)
+        
     def run(self):
+        self.default_window.load()
         self.root.mainloop()
 
 
