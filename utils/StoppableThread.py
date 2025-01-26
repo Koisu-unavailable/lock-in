@@ -4,9 +4,10 @@ class StoppableThread(threading.Thread):
     '''
     THE THREAD DOES HAVE TO CHECK FOR THE STOP EVENT REGULARLY
     '''
-    def __init__(self,  *args, **kwargs):
-        super(StoppableThread, self).__init__(*args, **kwargs)
+    def __init__(self,  *argsfunc, **kwargs):
         self._stop_event = threading.Event()
+        super(StoppableThread, self).__init__(args=(self._stop_event,), *argsfunc, **kwargs)
+        
 
     def stop(self):
         self._stop_event.set()

@@ -1,0 +1,318 @@
+[
+    {
+        "label": "PIL.Image",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "PIL.Image",
+        "description": "PIL.Image",
+        "detail": "PIL.Image",
+        "documentation": {}
+    },
+    {
+        "label": "PIL",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "PIL",
+        "description": "PIL",
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "call",
+        "importPath": "subprocess",
+        "description": "subprocess",
+        "isExtraImport": true,
+        "detail": "subprocess",
+        "documentation": {}
+    },
+    {
+        "label": "platform",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "platform",
+        "description": "platform",
+        "detail": "platform",
+        "documentation": {}
+    },
+    {
+        "label": "logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "NamedTuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "NamedTuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "BaseHTTPRequestHandler",
+        "importPath": "http.server",
+        "description": "http.server",
+        "isExtraImport": true,
+        "detail": "http.server",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPServer",
+        "importPath": "http.server",
+        "description": "http.server",
+        "isExtraImport": true,
+        "detail": "http.server",
+        "documentation": {}
+    },
+    {
+        "label": "threading",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "threading",
+        "description": "threading",
+        "detail": "threading",
+        "documentation": {}
+    },
+    {
+        "label": "StoppableThread",
+        "importPath": "utils.StoppableThread",
+        "description": "utils.StoppableThread",
+        "isExtraImport": true,
+        "detail": "utils.StoppableThread",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "tkinter",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "ConfigManager",
+        "importPath": "Managers",
+        "description": "Managers",
+        "isExtraImport": true,
+        "detail": "Managers",
+        "documentation": {}
+    },
+    {
+        "label": "pystray",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pystray",
+        "description": "pystray",
+        "detail": "pystray",
+        "documentation": {}
+    },
+    {
+        "label": "BlockManager",
+        "importPath": "Managers.BlockManager",
+        "description": "Managers.BlockManager",
+        "isExtraImport": true,
+        "detail": "Managers.BlockManager",
+        "documentation": {}
+    },
+    {
+        "label": "server.server",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "server.server",
+        "description": "server.server",
+        "detail": "server.server",
+        "documentation": {}
+    },
+    {
+        "label": "windows",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "windows",
+        "description": "windows",
+        "detail": "windows",
+        "documentation": {}
+    },
+    {
+        "label": "windows.block",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "windows.block",
+        "description": "windows.block",
+        "detail": "windows.block",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "server",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "server",
+        "description": "server",
+        "detail": "server",
+        "documentation": {}
+    },
+    {
+        "label": "BlockManager",
+        "kind": 6,
+        "importPath": "Managers.BlockManager",
+        "description": "Managers.BlockManager",
+        "peekOfCode": "class BlockManager():\n    def __init__(self,config: ConfigManager.Config):\n        self.config = config\n    # def minimize_all_windows(self):\n    #     def enum_handler(hwnd, lParam):\n    #         if win32gui.IsWindowVisible(hwnd):\n    #             win32gui.ShowWindow(hwnd, win32con.SW_MINIMIZE)\n    #     win32gui.EnumWindows(enum_handler, None)\n    # def restore_all_windows(self):\n    #     def enum_handler(hwnd, lParam):",
+        "detail": "Managers.BlockManager",
+        "documentation": {}
+    },
+    {
+        "label": "s",
+        "kind": 5,
+        "importPath": "Managers.BlockManager",
+        "description": "Managers.BlockManager",
+        "peekOfCode": "s = BlockManager(None)\ns._block_windows()",
+        "detail": "Managers.BlockManager",
+        "documentation": {}
+    },
+    {
+        "label": "ConfigManager",
+        "kind": 6,
+        "importPath": "Managers.ConfigManager",
+        "description": "Managers.ConfigManager",
+        "peekOfCode": "class ConfigManager():\n    \"\"\"This is a singleton. Please dont establish multiple instances of it\n    \"\"\"\n    def __init__(self, config_path):\n        self.config_path = config_path\n        self.logger = logging.Logger(\"ConfigManager\")\n        self.logger.setLevel(logging.ERROR)\n    def open_config(self):\n        if platform.system() == \"Windows\":\n            call(f\"notepad {self.config_path}\")",
+        "detail": "Managers.ConfigManager",
+        "documentation": {}
+    },
+    {
+        "label": "Config",
+        "kind": 6,
+        "importPath": "Managers.ConfigManager",
+        "description": "Managers.ConfigManager",
+        "peekOfCode": "class Config(NamedTuple):\n    exes : list[str]\n    titles : list[str]\n    urls : list[str]",
+        "detail": "Managers.ConfigManager",
+        "documentation": {}
+    },
+    {
+        "label": "ConfigError",
+        "kind": 6,
+        "importPath": "Managers.errors",
+        "description": "Managers.errors",
+        "peekOfCode": "class ConfigError(TypeError):\n    pass",
+        "detail": "Managers.errors",
+        "documentation": {}
+    },
+    {
+        "label": "ConfigServer",
+        "kind": 6,
+        "importPath": "server.server",
+        "description": "server.server",
+        "peekOfCode": "class ConfigServer(BaseHTTPRequestHandler):\n    def do_GET(self):\n        logger.debug(\"GETTONG FILE\")\n        self.send_response(200)\n        self.send_header(\"Content-type\", \"text/plain\")\n        self.end_headers()\n        print(self.path.split(\"/\"))\n        if self.path.split(\"/\")[1] == \"file\":\n            with open(self.path.removeprefix(\"/file/\"), \"r\") as file:\n                print(\"here\")",
+        "detail": "server.server",
+        "documentation": {}
+    },
+    {
+        "label": "get_config_server_thread",
+        "kind": 2,
+        "importPath": "server.server",
+        "description": "server.server",
+        "peekOfCode": "def get_config_server_thread():\n    thread = StoppableThread(target=_start_server, name=\"Server\")\n    return thread\ndef _start_server(event: threading.Event):\n    server = HTTPServer((HOSTNAME, SERVERPORT), ConfigServer)\n    print('HERE FIRST')\n    logger.debug(f\"Server started http://{HOSTNAME}:{SERVERPORT}\")\n    print('here')\n    server.serve_forever()\n    while True:",
+        "detail": "server.server",
+        "documentation": {}
+    },
+    {
+        "label": "HOSTNAME",
+        "kind": 5,
+        "importPath": "server.server",
+        "description": "server.server",
+        "peekOfCode": "HOSTNAME = \"localhost\"\nSERVERPORT = 6969\nlogger = logging.Logger(\"ConfigServer\", logging.DEBUG)\nclass ConfigServer(BaseHTTPRequestHandler):\n    def do_GET(self):\n        logger.debug(\"GETTONG FILE\")\n        self.send_response(200)\n        self.send_header(\"Content-type\", \"text/plain\")\n        self.end_headers()\n        print(self.path.split(\"/\"))",
+        "detail": "server.server",
+        "documentation": {}
+    },
+    {
+        "label": "SERVERPORT",
+        "kind": 5,
+        "importPath": "server.server",
+        "description": "server.server",
+        "peekOfCode": "SERVERPORT = 6969\nlogger = logging.Logger(\"ConfigServer\", logging.DEBUG)\nclass ConfigServer(BaseHTTPRequestHandler):\n    def do_GET(self):\n        logger.debug(\"GETTONG FILE\")\n        self.send_response(200)\n        self.send_header(\"Content-type\", \"text/plain\")\n        self.end_headers()\n        print(self.path.split(\"/\"))\n        if self.path.split(\"/\")[1] == \"file\":",
+        "detail": "server.server",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "server.server",
+        "description": "server.server",
+        "peekOfCode": "logger = logging.Logger(\"ConfigServer\", logging.DEBUG)\nclass ConfigServer(BaseHTTPRequestHandler):\n    def do_GET(self):\n        logger.debug(\"GETTONG FILE\")\n        self.send_response(200)\n        self.send_header(\"Content-type\", \"text/plain\")\n        self.end_headers()\n        print(self.path.split(\"/\"))\n        if self.path.split(\"/\")[1] == \"file\":\n            with open(self.path.removeprefix(\"/file/\"), \"r\") as file:",
+        "detail": "server.server",
+        "documentation": {}
+    },
+    {
+        "label": "StoppableThread",
+        "kind": 6,
+        "importPath": "utils.StoppableThread",
+        "description": "utils.StoppableThread",
+        "peekOfCode": "class StoppableThread(threading.Thread):\n    '''\n    THE THREAD DOES HAVE TO CHECK FOR THE STOP EVENT REGULARLY\n    '''\n    def __init__(self,  *argsfunc, **kwargs):\n        self._stop_event = threading.Event()\n        super(StoppableThread, self).__init__(args=(self._stop_event,), *argsfunc, **kwargs)\n    def stop(self):\n        self._stop_event.set()\n    def stopped(self):",
+        "detail": "utils.StoppableThread",
+        "documentation": {}
+    },
+    {
+        "label": "Block_window",
+        "kind": 6,
+        "importPath": "windows.block",
+        "description": "windows.block",
+        "peekOfCode": "class Block_window(window_base.Window_base):\n    def __init__(self, root: tk.Tk,  title : str = None):\n        super().__init__(root=root)\n        self.config = ConfigManager.ConfigManager(\"./config.txt\")\n        self.elements[\"block_button\"] = TKelement.TkElement(\n            tk.Button(root, text=\"Start block\"),\n            1,\n            1\n        )\n        self.elements[\"open_config\"] = TKelement.TkElement(",
+        "detail": "windows.block",
+        "documentation": {}
+    },
+    {
+        "label": "TkElement",
+        "kind": 6,
+        "importPath": "windows.TKelement",
+        "description": "windows.TKelement",
+        "peekOfCode": "class TkElement(NamedTuple):\n    widget : tk.Widget\n    row : int\n    column : int",
+        "detail": "windows.TKelement",
+        "documentation": {}
+    },
+    {
+        "label": "Window_base",
+        "kind": 6,
+        "importPath": "windows.window_base",
+        "description": "windows.window_base",
+        "peekOfCode": "class Window_base():\n    \"\"\"\n    Contains the base for a \"window\" (really just a set of elements).\n    This is an ABSTRACT CLASS\n    \"\"\"\n    def __init__(self,root : tk.Tk, title : str = \"\" ):\n        self.title = title\n        self.root = root\n        if not self.root:\n            print(self.root)",
+        "detail": "windows.window_base",
+        "documentation": {}
+    },
+    {
+        "label": "App",
+        "kind": 6,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "class App():\n    def __init__(self):\n        self.threads : dict[str, threading.Thread] = {}\n        logging.getLogger().setLevel(logging.DEBUG)\n        self.root = tk.Tk()\n        self.root.geometry(\"1280x720\")\n        self.root.title(\"Lock in\") # Todo: Change name\n        self.root.iconbitmap(\"assets\\\\ICO-TO-BE-REPLACED.ico\")\n        self.default_window = windows.block.Block_window(root=self.root)\n        self.blocking = True",
+        "detail": "main",
+        "documentation": {}
+    }
+]

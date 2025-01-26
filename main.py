@@ -2,6 +2,7 @@ import tkinter as tk
 
 import pystray
 from Managers.BlockManager import BlockManager
+import server.server
 import windows
 import windows.block
 import logging
@@ -9,6 +10,9 @@ import PIL
 import threading
 import os
 import time
+import server
+
+
 class App():
     def __init__(self):
         self.threads : dict[str, threading.Thread] = {}
@@ -35,10 +39,13 @@ class App():
             else:
                 thread.name = "icon"
             thread.start()
+        t = server.server.get_config_server_thread()
+        t.start()
         self.root.mainloop()
     def _test_daemon(self):
         while self.blocking:
-            print("test")
+            # print("test")
+            pass
     def quit_test_block(self):
         self.blocking = False
         
@@ -46,6 +53,7 @@ class App():
 
 if __name__ == '__main__':
     app = App()
-            
+
+
     
     app.run()
